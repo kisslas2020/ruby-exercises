@@ -1,6 +1,8 @@
+text = ARGV[0]
+number = ARGV[1].to_i
+
 def caesar_cipher(text, number)
     text.split('').map(&:ord).map {|code| get_char(code, number)}.join
-    end
 end
 
 def get_char(code, number)
@@ -20,3 +22,4 @@ def get_char(code, number)
     new_code.chr
 end
 
+puts "#{text} => #{caesar_cipher(text, number)}"
