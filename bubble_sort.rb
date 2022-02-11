@@ -28,5 +28,5 @@ def swap(index, unsorted_array)
     unsorted_array
 end
 
-p unsorted_array
-p bubble_sort(unsorted_array)
+puts "Original array: #{unsorted_array}"
+puts "Sorted array: #{bubble_sort(unsorted_array)}"
