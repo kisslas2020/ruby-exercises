@@ -1,4 +1,4 @@
-unsorted_array = ARGV.empty? ? [4,3,78,2,0,2] : ARGV[0].split(',').map {|n| n.to_i}
+unsorted_array = ARGV.empty? ? [4,3,78,2,0,2] : ARGV[0].split(',').map {|n| n.to_i == 0 ? n : n.to_i}
 
 def bubble_sort(unsorted_array)
     count = 1
@@ -28,4 +28,5 @@ def swap(index, unsorted_array)
     unsorted_array
 end
 
+p unsorted_array
 p bubble_sort(unsorted_array)
