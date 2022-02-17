@@ -19,6 +19,10 @@ class MyCar
     def shut_off
         self.speed.times {brake}
     end
+
+    def spray_paint=(new_color)
+        self.color = new_color
+    end
 end
 
 opel = MyCar.new(1998, "red", "Astra")
@@ -42,3 +46,8 @@ opel.model = "Corsa"
 puts opel.color
 puts opel.year
 puts opel.model
+
+puts "=============================="
+
+opel.spray_paint = "blue"
+puts opel.color
