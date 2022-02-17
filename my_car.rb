@@ -23,6 +23,10 @@ class MyCar
     def spray_paint=(new_color)
         self.color = new_color
     end
+
+    def self.mileage(consumption, distance)
+        (1.0 * consumption / distance).round(4) * 100
+    end
 end
 
 opel = MyCar.new(1998, "red", "Astra")
@@ -51,3 +55,7 @@ puts "=============================="
 
 opel.spray_paint = "blue"
 puts opel.color
+
+puts "=============================="
+
+puts "The consumption of #{opel.model} is #{MyCar.mileage(38, 549)} liter/km"
