@@ -27,6 +27,10 @@ class MyCar
     def self.mileage(consumption, distance)
         (1.0 * consumption / distance).round(4) * 100
     end
+
+    def to_s
+        "This is a car of model #{self.model} from year #{self.year},\nits color is #{self.color} and its current speed is #{self.speed} km/h"
+    end
 end
 
 opel = MyCar.new(1998, "red", "Astra")
@@ -59,3 +63,8 @@ puts opel.color
 puts "=============================="
 
 puts "The consumption of #{opel.model} is #{MyCar.mileage(38, 549)} liter/km"
+
+puts "=============================="
+
+puts opel
+p opel
