@@ -38,4 +38,13 @@ class Vehicle
     def self.get_created_objects
         @@created_objects
     end
+
+    def get_age
+        calculate_age
+    end
+
+    private
+    def calculate_age
+        Time.now.year - year
+    end
 end

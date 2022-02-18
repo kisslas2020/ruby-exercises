@@ -56,6 +56,10 @@ module Exercises
         puts "MyTruck ancestors: #{MyTruck.ancestors}"
         puts "VehiclesDemo ancestors: #{VehiclesDemo.ancestors}"
     end
+
+    def exercise_8(v)
+        puts "The #{v.model} is #{v.get_age} years old."
+    end
 end
 
 class VehiclesDemo
@@ -83,11 +87,12 @@ demo.exercise_5(opel)
 
 man = demo.get_truck(2015, "white", "MAN")
 demo.exercise_1(man)
-demo.exercise_2(man)
-demo.exercise_3(man)
 demo.exercise_4(man)
 demo.exercise_5(man)
 
 demo.exercise_6
 
 demo.exercise_7
+
+demo.exercise_8(opel)
+demo.exercise_8(man)
