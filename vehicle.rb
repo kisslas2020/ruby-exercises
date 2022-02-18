@@ -1,11 +1,14 @@
 class Vehicle
     attr_accessor :year, :color, :model, :speed
+
+    @@created_objects = 0
     
     def initialize(year, color, model)
         @year = year
         @color = color
         @model = model
         @speed = 0
+        @@created_objects += 1
     end
 
     def speed_up
@@ -30,5 +33,9 @@ class Vehicle
 
     def to_s
         "This is a car of model #{self.model} from year #{self.year},\nits color is #{self.color} and its current speed is #{self.speed} km/h"
+    end
+
+    def self.get_created_objects
+        @@created_objects
     end
 end

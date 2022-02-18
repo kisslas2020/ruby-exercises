@@ -45,6 +45,10 @@ module Exercises
         p v
         puts "=============================="
     end
+
+    def exercise_6
+        puts Vehicle.get_created_objects
+    end
 end
 
 class VehiclesDemo
@@ -76,3 +80,5 @@ demo.exercise_2(man)
 demo.exercise_3(man)
 demo.exercise_4(man)
 demo.exercise_5(man)
+
+demo.exercise_6
