@@ -49,6 +49,13 @@ module Exercises
     def exercise_6
         puts Vehicle.get_created_objects
     end
+
+    def exercise_7
+        puts "Vehicle ancestors: #{Vehicle.ancestors}"
+        puts "MyCar ancestors: #{MyCar.ancestors}"
+        puts "MyTruck ancestors: #{MyTruck.ancestors}"
+        puts "VehiclesDemo ancestors: #{VehiclesDemo.ancestors}"
+    end
 end
 
 class VehiclesDemo
@@ -82,3 +89,5 @@ demo.exercise_4(man)
 demo.exercise_5(man)
 
 demo.exercise_6
+
+demo.exercise_7
